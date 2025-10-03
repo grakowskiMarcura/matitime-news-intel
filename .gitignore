@@ -11,3 +11,4 @@ build/
 !backend/
 !frontend/
 !orchestrator/
+.env
