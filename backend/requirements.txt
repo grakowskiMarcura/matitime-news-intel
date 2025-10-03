@@ -1,0 +1,31 @@
+# Web framework
+fastapi==0.118.0
+uvicorn[standard]==0.23.2
+
+# LangChain (compatible with Pydantic 2.x)
+langchain==0.3.27
+
+# Google Gemini API client (or HTTP requests)
+google-api-python-client==2.93.0
+google-auth==2.22.0
+
+# Database
+SQLAlchemy==2.0.21
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1
+
+# Vector search / embeddings
+numpy==1.26.4
+scikit-learn==1.3.2
+pgvector==0.4.1
+
+# Scheduling / pipelines
+prefect==3.4.21
+
+# Utilities
+requests==2.32.1
+pydantic
+
+# Testing
+pytest==7.4.2
+pytest-asyncio==0.21.0
