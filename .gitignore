@@ -1,9 +1,11 @@
 # Ignore OS and editor files
+
 /.vscode/
 *.log
 node_modules/
 dist/
 build/
+.venv/
 
 # Allow the top-level project folders
 !backend/
