@@ -6,18 +6,18 @@ A **continuous LangChain-based platform** that collects maritime news and social
 
 ## 📑 Table of Contents
 
-* [What it does](#what-it-does)
-* [Features](#features)
-* [Project structure](#project-structure)
-* [Tech stack](#tech-stack)
-* [Quick start](#quick-start)
-* [Environment variables](#environment-variables)
-* [API examples](#api-examples)
-* [Demo pipeline](#demo-pipeline)
-* [Ranking example](#ranking-example)
-* [Testing](#testing)
-* [Roadmap](#roadmap)
-* [Contributing & License](#contributing--license)
+- [What it does](#what-it-does)
+- [Features](#features)
+- [Project structure](#project-structure)
+- [Tech stack](#tech-stack)
+- [Quick start](#quick-start)
+- [Environment variables](#environment-variables)
+- [API examples](#api-examples)
+- [Demo pipeline](#demo-pipeline)
+- [Ranking example](#ranking-example)
+- [Testing](#testing)
+- [Roadmap](#roadmap)
+- [Contributing & License](#contributing--license)
 
 ---
 
@@ -35,14 +35,14 @@ Continuously:
 
 ## ✨ Features
 
-* Continuous ingestion (scheduled via Prefect or Celery).
-* Multi-source connectors (X/Twitter, LinkedIn, RSS feeds, industry websites).
-* Voice detection: Industry leader / Journalist / Public.
-* Sector tagging: Tankers, Dry Bulk, Containers, LNG, Regulation, Geopolitics, Green shipping, etc.
-* Importance scoring (authority + engagement + recency + relevance).
-* Semantic search (vector DB / pgvector).
-* FastAPI endpoints for feed, search, and summaries.
-* Optional alerting & trend detection.
+- Continuous ingestion (scheduled via Prefect or Celery).
+- Multi-source connectors (X/Twitter, LinkedIn, RSS feeds, industry websites).
+- Voice detection: Industry leader / Journalist / Public.
+- Sector tagging: Tankers, Dry Bulk, Containers, LNG, Regulation, Geopolitics, Green shipping, etc.
+- Importance scoring (authority + engagement + recency + relevance).
+- Semantic search (vector DB / pgvector).
+- FastAPI endpoints for feed, search, and summaries.
+- Optional alerting & trend detection.
 
 ---
 
@@ -87,13 +87,13 @@ maritime-news-intel/
 
 ## 🛠 Tech stack
 
-* **Python 3.10+**
-* **LangChain** for LLM orchestration
-* **FastAPI** backend
-* **Supabase / Postgres** with `pgvector`
-* **Prefect** (or Celery) for scheduled pipelines
-* **React + Vite + Tailwind + ShadCN UI** frontend
-* **Docker / docker-compose** for local development
+- **Python 3.10+**
+- **LangChain** for LLM orchestration
+- **FastAPI** backend
+- **Supabase / Postgres** with `pgvector`
+- **Prefect** (or Celery) for scheduled pipelines
+- **React + Vite + Tailwind + ShadCN UI** frontend
+- **Docker / docker-compose** for local development
 
 ---
 
@@ -116,9 +116,9 @@ Copy `.env.example` → `.env` and fill in keys.
 docker-compose up --build
 ```
 
-* Backend: `http://localhost:8000`
-* Frontend: `http://localhost:3000`
-* Prefect UI (if enabled): `http://localhost:4200`
+- Backend: `http://localhost:8000`
+- Frontend: `http://localhost:3000`
+- Prefect UI (if enabled): `http://localhost:4200`
 
 ### 4. Local dev (without Docker)
 
@@ -160,14 +160,9 @@ SUPABASE_KEY=service_role_key
 
 ## 📡 API examples
 
-**GET** `/feed?sector=tanker&limit=20`
-Returns the latest ranked posts for the tanker sector.
-
-**GET** `/search?q=sanctions&limit=10`
-Semantic + keyword search.
-
-**GET** `/summary?sector=bulk&period=24h`
-Digest summary for bulk sector in the last 24 hours.
+**GET** `/feed?sector=tanker&limit=20`  - Returns the latest ranked posts for the tanker sector.\
+**GET** `/search?q=sanctions&limit=10`  - Semantic + keyword search.\
+**GET** `/summary?sector=bulk&period=24h`  - Digest summary for bulk sector in the last 24 hours.
 
 ```bash
 curl "http://localhost:8000/feed?sector=tanker&limit=5"
@@ -235,16 +230,12 @@ pytest backend/tests/
 
 ## 📈 Roadmap
 
-* [ ] Add support for Telegram & Discord maritime groups
-* [ ] Real-time alerting (email, Slack, Teams)
-* [ ] Dashboard with charts & leaderboards
-* [ ] Deploy cloud-native with CI/CD
+-
 
 ---
 
 ## 🤝 Contributing & License
 
-Contributions welcome — open an issue or PR.
+Contributions welcome — open an issue or PR.\
 Licensed under **MIT**.
 
----
