@@ -1,0 +1,11 @@
+# Ignore OS and editor files
+/.vscode/
+*.log
+node_modules/
+dist/
+build/
+
+# Allow the top-level project folders
+!backend/
+!frontend/
+!orchestrator/
